@@ -1,6 +1,6 @@
 // const { Configuration, OpenAIApi } = require('openai');
 
-// const configuration = new Configuration({ apiKey: "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" });
+// const configuration = new Configuration({ apiKey: "" });
 // const openai = new OpenAIApi(configuration);
 
 // async function sendMsgToOpenAPI(message) {
@@ -20,7 +20,7 @@
 
 const OpenAI = require('openai');
 
-const openai = new OpenAI({ apiKey: "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", dangerouslyAllowBrowser: true });
+const openai = new OpenAI({ apiKey: "", dangerouslyAllowBrowser: true });
 
 export async function sendMsgToOpenAPI(message) {
   const res = await openai.completions.create({
